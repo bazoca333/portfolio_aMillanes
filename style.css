@@ -1,9 +1,60 @@
-body{
-    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+body {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%),
+                linear-gradient(112.1deg, rgb(63, 76, 119) 11.4%, rgb(32, 38, 57) 70.2%);
+    background-size: 200% 200%;
+    background-position: 0 0;
+    animation: gradientAnimation 10s ease infinite;
 }
+
 
 
 .row{
     color: white;
 
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+.navbar-nav .nav-link.active {
+    color: white !important;
+}
+
+
+.contact-link {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: rgb(199, 210, 231);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(63, 76, 119, 0.8);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-link i {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: rgb(199, 210, 231);
+}
+
+.contact-link:hover {
+    background-color: rgba(199, 210, 231, 0.8);
+    color: rgb(32, 38, 57);
+}
+
+.contact-link:hover i {
+    color: rgb(32, 38, 57);
+}
+
+.card .btn-primary {
+    background-color: rgb(63, 76, 119);
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card .btn-primary:hover {
+    background-color: rgb(47, 55, 85);
+    transform: scale(1.05);
 }
